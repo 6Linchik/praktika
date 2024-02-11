@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Page</title>
+    <link rel="stylesheet" href="../../common.css" />
+    <link rel="stylesheet" href="./formPage.css" />
+  </head>
+  <body class="bg-image">
+    <div class="container">
+      <form class="main-form" id="mainForm">
+        <label>
+          <h3 class="label-title">Назва будинку</h3>
+          <input type="text" name="houseName" required />
+        </label>
+        <label>
+          <h3 class="label-title">Площа опалювального приміщення</h3>
+          <input type="number" name="roomArea" required />
+        </label>
+        <label>
+          <h3 class="label-title">Площа першого поверху</h3>
+          <input type="number" name="firstFloorArea" required />
+        </label>
+        <label>
+          <h3 class="label-title">Тип фундаменту</h3>
+          <select name="fundamentType">
+            <option value="Стрічковий">Стрічковий</option>
+            <option value="Пальовий">Пальовий</option>
+            <option value="Пальово-стрічковий">Пальово-стрічковий</option>
+            <option value="Плитний">Плитний</option>
+            <option value="Монолітний">Монолітний</option>
+          </select>
+        </label>
+        <label>
+          <h3 class="label-title">
+            Якщо присутній підвал то його площа, якщо ні то 0
+          </h3>
+          <input type="number" name="basementArea" value="0" required />
+        </label>
+        <label>
+          <h3 class="label-title">Кількість поверхів</h3>
+          <input type="number" name="floorsAmount" required />
+        </label>
+        <label>
+          <h3 class="label-title">Рік побудови</h3>
+          <input type="number" name="construnctionYear" required />
+        </label>
+        <label>
+          <h3 class="label-title">Площа вікон</h3>
+          <input type="number" name="windowsArea" required />
+        </label>
+        <label>
+          <h3 class="label-title">Тип скління вікон</h3>
+          <select name="windowsGlassType">
+            <option value="Просте скло">Просте скло</option>
+            <option value="Подвійне скло без покриття">
+              Подвійне скло без покриття
+            </option>
+            <option value="подвійне скло з покриттям (HR)">
+              Подвійне скло з покриттям (HR)
+            </option>
+            <option value="HR+">HR+</option>
+            <option value="HR++">HR++</option>
+            <option value="Потрійне скло HR">Потрійне скло HR</option>
+          </select>
+        </label>
+        <label>
+          <h3 class="label-title">Тип віконної рами</h3>
+          <select name="windowsFrameType">
+            <option value="Дерево">Дерево</option>
+            <option value="2-х камерний металопластик">
+              2-х камерний металопластик
+            </option>
+            <option value=" 3-х камерний металопластик">
+              3-х камерний металопластик
+            </option>
+          </select>
+        </label>
+        <label>
+          <h3 class="label-title">Площа даху</h3>
+          <input type="number" name="roofArea" required />
+        </label>
+        <label>
+          <h3 class="label-title">Тип даху</h3>
+          <select name="roofType">
+            <option value="металева покрівля">металева покрівля</option>
+            <option value="керамічна черепиця">керамічна черепиця</option>
+            <option value="бетонна черепиця">бетонна черепиця</option>
+            <option value="шифер">шифер</option>
+            <option value="Пластикові композитні матеріали">
+              Пластикові композитні матеріали
+            </option>
+            <option value="Асфальтові покрівельні матеріали">
+              Асфальтові покрівельні матеріали
+            </option>
+            <option value="Сланцеві плити">Сланцеві плити</option>
+            <option value="Полімерні покрівельні плівки">
+              Полімерні покрівельні плівки
+            </option>
+          </select>
+        </label>
+        <label>
+          <h3 class="label-title">Тип утеплення даху</h3>
+          <select name="roofInsulationType">
+            <option value="ні">ні</option>
+            <option value="скло/мінеральна вата">скло/мінеральна вата</option>
+            <option value="пластівціскло/мінеральної вати">
+              пластівціскло/мінеральної вати
+            </option>
+            <option value="пінополістирол">пінополістирол</option>
+            <option value="жорсткий пінополіуретан">
+              жорсткий пінополіуретан
+            </option>
+            <option value="жорстка/тверда піна з пінополіуретану">
+              жорстка/тверда піна з пінополіуретану
+            </option>
+            <option value="фенолформальдегід резолу">
+              фенолформальдегід резолу
+            </option>
+            <option value="комірчасте скло">комірчасте скло</option>
+            <option value="деревна шерсть">деревна шерсть</option>
+            <option value="деревні волокна">деревні волокна</option>
+            <option value="спучений перліт">спучений перліт</option>
+          </select>
+        </label>
+        <label>
+          <h3 class="label-title">Довжина зовнішніх стін</h3>
+          <input type="number" name="outsideWallsLength" required />
+        </label>
+        <label>
+          <h3 class="label-title">Тип зовнішніх стін</h3>
+          <select name="outsideWallsType">
+            <option value="цегла керамічна повнотіла">
+              цегла керамічна повнотіла
+            </option>
+            <option value="керамічний блок 2nf">керамічний блок 2nf</option>
+            <option value="силікатна цегла">силікатна цегла</option>
+            <option value="бетон">бетон</option>
+            <option value="газоблок">газоблок</option>
+            <option value="моноліт із газобетону">моноліт із газобетону</option>
+            <option value="піноблок">піноблок</option>
+            <option value="моноліт із пінобетону">моноліт із пінобетону</option>
+            <option value="каркасно-щитові">каркасно-щитові</option>
+          </select>
+        </label>
+        <label>
+          <h3 class="label-title">Утеплення зовнішніх стін</h3>
+          <select name="outsideWallsInsulation">
+            <option value="ні">ні</option>
+            <option value="скло/мінеральна вата">скло/мінеральна вата</option>
+            <option value="пластівціскло/мінеральної вати">
+              пластівціскло/мінеральної вати
+            </option>
+            <option value="пінополістирол">пінополістирол</option>
+            <option value="жорсткий пінополіуретан">
+              жорсткий пінополіуретан
+            </option>
+            <option value="жорстка/тверда піна з пінополіуретану">
+              жорстка/тверда піна з пінополіуретану
+            </option>
+            <option value="фенолформальдегід резолу">
+              фенолформальдегід резолу
+            </option>
+            <option value="комірчасте скло">комірчасте скло</option>
+            <option value="деревна шерсть">деревна шерсть</option>
+            <option value="деревні волокна">деревні волокна</option>
+            <option value="спучений перліт">спучений перліт</option>
+          </select>
+        </label>
+        <label>
+          <h3 class="label-title">Висота стель</h3>
+          <input type="number" name="cellingHeight" required />
+        </label>
+
+        <button type="submit" class="submit-btn">Додати будинок</button>
+      </form>
+    </div>
+
+    <script src="
+    https://cdn.jsdelivr.net/npm/notiflix@3.2.7/dist/notiflix-aio-3.2.7.min.js
+    "></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./formPage.js" type="module"></script>
+  </body>
+</html>

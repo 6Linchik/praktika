@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Page</title>
+    <link rel="stylesheet" href="../../common.css" />
+    <link rel="stylesheet" href="../formPage/formPage.css" />
+  </head>
+  <body class="bg-image">
+    <div class="container">
+      <form class="main-form" id="dateForm">
+        <h3 class="label-title">Ваш будинок</h3>
+        <label>
+          <h3 class="label-title">Місяць</h3>
+          <input type="text" name="month" required />
+        </label>
+
+        <label>
+          <h3 class="label-title">Тип опалення</h3>
+          <select name="heatingType">
+            <option value="тепловий насос">тепловий насос</option>
+            <option value="твердопаливний котел">твердопаливний котел</option>
+            <option value="газовий котел">газовий котел</option>
+            <option value="електричний котел">електричний котел</option>
+            <option value="тепла підлога">тепла підлога</option>
+            <option value="керамічні панелі">керамічні панелі</option>
+            <option value="електричні конвектори">електричні конвектори</option>
+            <option value="інфрачервоні обігрівачі">
+              інфрачервоні обігрівачі
+            </option>
+            <option value="тепловентилятори">тепловентилятори</option>
+            <option value="піч/камін">піч/камін</option>
+          </select>
+        </label>
+
+        <label>
+          <h3 class="label-title">
+            Потужність опалювального приладу від виробника
+          </h3>
+          <input type="number" name="heaterPower" required />
+        </label>
+        <label>
+          <h3 class="label-title">Місто/область</h3>
+          <input type="text" name="city" required />
+        </label>
+        <label>
+          <h3 class="label-title">Кількість витрачених кВт на опалення</h3>
+          <input type="number" name="kwAmount" required />
+        </label>
+        <label>
+          <h3 class="label-title">Температура в будинку</h3>
+          <input type="number" name="temperature" required />
+        </label>
+        <label>
+          <h3 class="label-title">Вартість кВт</h3>
+          <input type="number" name="kwPrice" required />
+        </label>
+
+        <button type="submit" class="submit-btn">Додати Дату</button>
+      </form>
+    </div>
+
+    <script src="
+    https://cdn.jsdelivr.net/npm/notiflix@3.2.7/dist/notiflix-aio-3.2.7.min.js
+    "></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./dateFormPage.js" type="module"></script>
+  </body>
+</html>
